@@ -1,1 +1,12 @@
+name: Docker Greeting Action
+description: A simple Docker based GitHub Action
 
+inputs:
+  name:
+    description: Name of the person
+    required: true
+    default: Student
+
+runs:
+  using: docker
+  image: Dockerfile
